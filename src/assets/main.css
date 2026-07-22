@@ -1,0 +1,16 @@
+/* Small shared rules only. Most layout is handled by Bootstrap classes. */
+/* 这里只保留少量全局样式，大部分布局由 Bootstrap 类完成。 */
+body {
+  min-width: 320px;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #212529;
+}
+
+a {
+  color: #146c63;
+}
+
+a:hover {
+  color: #0f5132;
+}
