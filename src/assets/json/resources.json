@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "category": "Movement",
+    "title": "Staying Active Safely",
+    "description": "Simple ways to add safe movement and balance exercises to your week.",
+    "readingTime": "4 min read"
+  },
+  {
+    "id": 2,
+    "category": "Nutrition",
+    "title": "Healthy Eating as We Age",
+    "description": "Practical meal and hydration ideas for energy and wellbeing.",
+    "readingTime": "5 min read"
+  },
+  {
+    "id": 3,
+    "category": "Medication",
+    "title": "Using Medicines Safely",
+    "description": "Questions to ask and simple habits that support safe medicine use.",
+    "readingTime": "6 min read"
+  },
+  {
+    "id": 4,
+    "category": "Safety",
+    "title": "Preventing Falls at Home",
+    "description": "A short room-by-room checklist for making everyday spaces safer.",
+    "readingTime": "5 min read"
+  },
+  {
+    "id": 5,
+    "category": "Wellbeing",
+    "title": "Looking After Mental Wellbeing",
+    "description": "Ways to stay connected and recognise when more support is needed.",
+    "readingTime": "4 min read"
+  },
+  {
+    "id": 6,
+    "category": "Movement",
+    "title": "Simple Balance Exercises",
+    "description": "Gentle balance activities that can be completed near a stable chair.",
+    "readingTime": "3 min read"
+  },
+  {
+    "id": 7,
+    "category": "Nutrition",
+    "title": "Remembering to Drink Water",
+    "description": "Easy reminders and routines that can support healthy hydration.",
+    "readingTime": "3 min read"
+  },
+  {
+    "id": 8,
+    "category": "Safety",
+    "title": "Preparing for Hot Weather",
+    "description": "Steps older adults and carers can take before very hot days.",
+    "readingTime": "4 min read"
+  }
+]
