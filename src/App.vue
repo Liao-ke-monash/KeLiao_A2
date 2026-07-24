@@ -8,8 +8,7 @@ import BHeader from './components/BHeader.vue'
       <BHeader />
     </header>
 
-    <!-- RouterView displays the page selected in src/router/index.js. -->
-    <!-- RouterView 会显示 src/router/index.js 中选择的页面。 -->
+
     <main class="main-box">
       <RouterView />
     </main>
