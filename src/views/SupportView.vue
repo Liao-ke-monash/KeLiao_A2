@@ -24,6 +24,7 @@
                 :class="{ 'is-invalid': errors.fullName }"
                 maxlength="60"
                 autocomplete="name"
+                readonly
                 required
                 @blur="() => validateName(true)"
                 @input="() => validateName(false)"
@@ -41,6 +42,7 @@
                 :class="{ 'is-invalid': errors.email }"
                 maxlength="100"
                 autocomplete="email"
+                readonly
                 required
                 @blur="() => validateEmail(true)"
                 @input="() => validateEmail(false)"
@@ -185,10 +187,11 @@
 
 <script setup>
 import { ref } from 'vue'
+import { currentUser } from '../auth'
 
 const formData = ref({
-  fullName: '',
-  email: '',
+  fullName: currentUser.value ? currentUser.value.fullName : '',
+  email: currentUser.value ? currentUser.value.email : '',
   phone: '',
   requestFor: '',
   requestType: '',
@@ -336,8 +339,8 @@ const submitForm = () => {
 
 const clearForm = () => {
   formData.value = {
-    fullName: '',
-    email: '',
+    fullName: currentUser.value ? currentUser.value.fullName : '',
+    email: currentUser.value ? currentUser.value.email : '',
     phone: '',
     requestFor: '',
     requestType: '',

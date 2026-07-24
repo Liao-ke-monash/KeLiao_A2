@@ -21,7 +21,7 @@
 <script setup>
 const events = [
   {
-    date: '24 July 2026',
+    date: '30 July 2026',
     title: 'Gentle Movement Morning',
     location: 'Riverside Community Centre',
     time: '10:00 am - 11:00 am',
