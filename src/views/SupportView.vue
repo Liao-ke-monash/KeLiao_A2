@@ -187,7 +187,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import { currentUser } from '../auth'
+import { cleanText, currentUser } from '../auth'
 
 const formData = ref({
   fullName: currentUser.value ? currentUser.value.fullName : '',
@@ -327,6 +327,8 @@ const submitForm = () => {
 
     savedRequests.push({
       ...formData.value,
+      fullName: cleanText(formData.value.fullName),
+      details: cleanText(formData.value.details),
       referenceNumber,
       submittedAt: new Date().toISOString(),
     })

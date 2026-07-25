@@ -15,6 +15,10 @@ export const currentUser = ref(savedUser)
 export const isAuthenticated = ref(savedUser !== null)
 
 
+export const cleanText = (text) => {
+  return text.replace(/<[^>]*>/g, '').trim()
+}
+
 export const register = (fullName, email, password) => {
   const users = JSON.parse(localStorage.getItem('users')) || []
   const cleanEmail = email.trim().toLowerCase()
