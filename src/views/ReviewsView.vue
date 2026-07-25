@@ -81,7 +81,7 @@
 
 <script setup>
 import { computed, ref } from 'vue'
-import { currentUser, isAuthenticated } from '../auth'
+import { cleanText, currentUser, isAuthenticated } from '../auth'
 
 const ratings = ref(JSON.parse(localStorage.getItem('communityRatings')) || [])
 const rating = ref('')
@@ -135,7 +135,7 @@ const submitRating = () => {
       userName: currentUser.value.fullName,
       userEmail: currentUser.value.email,
       rating: rating.value,
-      comment: comment.value.trim(),
+      comment: cleanText(comment.value),
       submittedAt: new Date().toISOString(),
     }
 

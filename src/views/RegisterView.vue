@@ -74,7 +74,7 @@
 <script setup>
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
-import { register } from '../auth'
+import { cleanText, register } from '../auth'
 
 const router = useRouter()
 
@@ -154,7 +154,7 @@ const submitForm = () => {
     !errors.value.confirmPassword
   ) {
     const result = register(
-      formData.value.fullName,
+      cleanText(formData.value.fullName),
       formData.value.email,
       formData.value.password,
     )
